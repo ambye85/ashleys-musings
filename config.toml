@@ -15,7 +15,7 @@ custom_css = "/static/css/custom.css"
   github = "ambye85"
   linkedin = "ambye85"
   # Disqus shortname
-  disqus = "ambye85"
+  disqus = "ambye85-github-io"
   # Google Analytics API key.
   ga_api_key = "UA-141662135-1"
   authorwebsite = "https://ambye85.github.io/"
