@@ -1,0 +1,3 @@
+[submodule "themes/pickle"]
+	path = themes/pickle
+	url = git@github.com:mismith0227/hugo_theme_pickles.git
