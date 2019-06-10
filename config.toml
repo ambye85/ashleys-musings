@@ -1,6 +1,6 @@
-baseURL = "https://ashleybye.uk/"
+baseURL = "https://ambye85.github.io/"
 languageCode = "en-gb"
-title = "ashleybye.uk"
+title = "Ashley's musings"
 theme = "pickle"
 
 # Copyright notice. This is displayer in the footer.
@@ -13,12 +13,12 @@ custom_css = "/static/css/custom.css"
   # footer
   twitter = "ambye85"
   github = "ambye85"
-  linkedin = "Your LinkedIn username"
+  linkedin = "ambye85"
   # Disqus shortname
-  disqus = ""
+  disqus = "ambye85"
   # Google Analytics API key.
-  ga_api_key = "Your Google Analytics tracking id"
-  authorwebsite = "ashleybye.uk"
+  ga_api_key = "UA-141662135-1"
+  authorwebsite = "https://ambye85.github.io/"
   # Short subtitle/tagline. This is displayed in the header.
   subtitle = "A collection of mostly programming related posts."
   # Logo image. This is displayed ogp image.
