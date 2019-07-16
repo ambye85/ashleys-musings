@@ -1,7 +1,7 @@
 ---
 title: "Detecting Gaze with the GoogleVR Reticle Pointer in Unity"
 date: 2019-07-16T08:07:54+01:00
-draft: true
+draft: false
 ---
 One of the situations I often encounter when developing VR software in Unity is detecting gaze. With the GoogleVR SDK for Cardboard and Daydream, there are prefabs that provide gaze based pointers. When combined with an event system and wired up with one or more events, I can detect when a particular game object is being gazed at (providing it has a collider component).
 
