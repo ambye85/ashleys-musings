@@ -13,6 +13,37 @@ The solution? Well, the first is relatively simple. I had forgotten to turn off 
 
 A solution to the second unwanted behaviour is perhaps a little tricker. For simplicity, I settled on re-enabling the collider for the mole hole and setting its position to below my scene but covering the hidden mole. Effectively, its the inverse of problem one but now working for me rather than against me.
 
-I don't particularly like the solution to problem two, however. It feels like a bit of a hack. Plus, Unity has fantastic layer and tagging systems that can be combined effectively with raycasting. Layers are particularly effective given that they can be used to build a layer mask which is passed as an argument to the raycast.
+The other option I toyed with was enabling and disabling the collider of the mole at the relevant times. Effectively:
+
+```csharp
+private SphereCollider collider;
+
+private void Start()
+{
+    collider = GetComponent<SphereCollider>();
+}
+
+private void Update()
+{
+    var pos = transform.position;
+    if (ShouldHide())
+    {
+        transform.position = new Vector3(pos.x, -1.0f, pos.z);
+        collider.SetActive(false);
+    }
+    else
+    {
+        transform.position = new Vector3(pos.x, 0.0f, pos.z);
+        collider.SetActive(true);
+    }
+}
+
+private bool ShouldHide()
+{
+    // Some logic...
+}
+```
+
+I don't particularly like either of these solutions to problem two. They both feel like a bit of a hack. Plus, Unity has fantastic layer and tagging systems that can be combined effectively with raycasting. Layers are particularly effective given that they can be used to build a layer mask which is passed as an argument to the raycast.
 
 Since I'm pretty certain that the `GvrReticlePointer` uses raycasting underneath, I'm going to investigate whether I can specify a layer mask.
